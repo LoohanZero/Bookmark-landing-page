@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navigators-container,.faq {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container,.faq-title {
+    text-align: center;
+    width: 450px;
+}
+
+.title-container h2,.faq-title h2 {
+    font-weight: bold;
+    margin: 20px;
+
+}
+
+.title-container p,.faq-title p {
+    color: hsl(229, 8%, 60%);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.nav-cards {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.second-nav-card {
+    top: 30px;
+}
+
+.third-nav-card {
+    top: 60px;
+}
+
+.nav-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px 1px hsl(229, 8%, 60%, 0.2);
+    margin: 15px;
+}
+
+.nav-card img {
+    margin: 25px 15px;
+    height: 100px;
+}
+
+
+.nav-card p {
+    font-size: 13px;
+    color: hsl(229, 8%, 60%);
+    margin: 10px;
+}
+.border-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.border-button button {
+    background-color: hsl(231, 69%, 60%);
+    border: 2px solid hsl(231, 69%, 60%);
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin: 20px 10px;
+    margin-top: 0px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 1px 5px 10px 1px hsl(229, 8%, 60%, 0.3);
+}
+
+.border-button img {
+    width: 250px;
+    height: 4px;
+    margin: 20px;
+}
+/*----------------------------------------
+                HOVERS
+-----------------------------------------*/
+.border-button button:hover {
+    background-color: white;
+    color: hsl(231, 69%, 60%);
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------
+                                                    FAQ
+--------------------------------------------------------------------------------------------------------------------------------------*/
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    list-style: none;
+  
+    margin-bottom: 150px;
+
+}
+.qa-container {
+    border-top: 1px solid hsl(229, 8%, 60%);
+    position: relative;
+    width: 100%;
+
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    line-height: 30px;
+    padding: 15px 0;
+    position: relative;
+    transition: all 0.3s;
+}
+.faq-question .fa-chevron-down {
+    color: hsl(231, 69%, 60%);
+}
+
+.faq-answer p {
+    color: hsl(229, 8%, 60%);
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.faq-answer {
+    position: relative;
+    width: 100%;
+    display: none;
+    transition: all 0.3s;
+}
+.faq button {
+    background-color: hsl(231, 69%, 60%);
+    border: 2px solid hsl(231, 69%, 60%);
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin: 20px 10px;
+    margin-top: 0px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 1px 5px 10px 1px hsl(229, 8%, 60%, 0.3);
+}
+
+.last-qa {
+    border-bottom: 1px solid hsl(229, 8%, 60%);
+}
+/*----------------------------------------
+          HOVERS AND ACTIVES
+-----------------------------------------*/
+.question1:hover {
+    color: red;
+    transition: all 0.3s;
+}
+.question2:hover {
+    color: red;
+    transition: all 0.3s;
+}
+.question3:hover {
+    color: red;
+    transition: all 0.3s;
+}
+.question4:hover {
+    color: red;
+    transition: all 0.3s;
+}
+.question1:active + .answer1 {
+    display: block;
+    transition: all 0.3s;
+}
+
+.question2:active + .answer2 {
+    display: block;
+    transition: all 0.3s;
+}
+
+.question3:active + .answer3 {
+    display: block;
+    transition: all 0.3s;
+}
+
+.question4:active + .answer4 {
+    display: block;
+    transition: all 0.3s;
+}
+
+.faq button:hover {
+    background-color: white;
+    color: hsl(231, 69%, 60%);
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------
+                                                  JOIN IN SECTION
+--------------------------------------------------------------------------------------------------------------------------------------*/
+
+.join-in-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: hsl(231, 69%, 60%);
+    width: 100%;
+    padding-top: 50px;
+}
+
+.join-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 30px;
+}
+
+.joined {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white;
+    margin: 50px;
+}
+
+.stay-up {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+.input-container {
+    position: relative;
+    display: flex;
+    margin-bottom: 100px;
+}
+.input-container input {
+    border: 2px solid hsl(231, 69%, 60%);
+    width: 250px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    height: 16.4px;
+}
+
+.input-container button {
+    background-color: hsl(0, 94%, 66%);
+    border: 2px solid hsl(0, 94%, 66%);
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin: 20px 10px;
+    margin-top: 0px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 1px 5px 5px 1px hsl(229, 8%, 60%, 0.1);
+}
+.invalid-input .fa-exclamation-circle {
+    color:  hsl(0, 94%, 66%);
+    position: absolute;
+    left: 280px;
+    top: 17px;
+    display:none;
+}
+
+.invalid-input p {
+    background-color:  hsl(0, 94%, 66%);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: none;
+    font-size: 11px;
+    color: white;
+    padding: 10px;
+    font-style: italic;
+    width: 294px;
+    position: absolute;
+    bottom: -15px;
+    left:0;
+}
+
+/*----------------------------------------
+                 STATES
+-----------------------------------------*/
+.input-container button:hover {
+    background-color: white;
+    border: 2px solid hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
+}
+.input-container input:active {
+    border: 2px solid hsl(231, 69%, 60%);
+}
+.input-container input:invalid {
+    border: 2px solid hsl(0, 94%, 66%);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input-container input:invalid + .invalid-input .fa-exclamation-circle {
+    display: block;
+}
+
+.input-container input:invalid + .invalid-input p {
+    display: block;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------
+                                                  CONTACT SECTION
+--------------------------------------------------------------------------------------------------------------------------------------*/
+
+.contact-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(229, 31%, 21%);
+    height: 70px;
+}
+.logo-nav-container {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.img-contact img {
+    height: 20px;
+    margin: 0 30px;
+}
+
+.img-contact {
+    margin: 0 30px;
+}
+.nav-contact {
+    display: flex;
+    font-size: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav-contact p {
+    padding: 0 20px;
+}
+
+.social-contact {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-contact a {
+    margin: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.nav-contact p:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+.social-contact a:hover {
+    filter: invert(57%) sepia(69%) saturate(3897%) hue-rotate(326deg) brightness(98%) contrast(100%);
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------
+                                                  Footer
+--------------------------------------------------------------------------------------------------------------------------------------*/
+footer {
+    height: 25px;
+}
