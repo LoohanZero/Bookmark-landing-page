@@ -38,7 +38,7 @@ body{
 .links-header ul li{
     line-height: 40px;
     width: 100px;
-   ;
+    text-align: center;
 }
 .links-header ul li:hover{
     background-color: palevioletred;
