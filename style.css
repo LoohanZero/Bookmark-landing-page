@@ -39,6 +39,7 @@ body{
     line-height: 40px;
     width: 100px;
     text-align: center;
+    cursor: pointer;
 }
 .links-header ul li:hover{
     background-color: palevioletred;
@@ -86,6 +87,7 @@ body{
     font-size: 15px;
     font-weight: 600;
     margin-right: 15px;
+    cursor: pointer;
 }
 .buttons button:hover, .img-text button:hover {
     color: white;
@@ -275,6 +277,7 @@ li{
 }
 .img-text button{
     margin-top: 10px;
+    cursor: pointer;
 }
 .img2 {
     display: none;
